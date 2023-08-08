@@ -34,7 +34,7 @@ body {
 
 .result-container {
     padding: 10px;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 50, 55);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -63,12 +63,13 @@ body {
 
 .settings > div {
     cursor: pointer;
-    background-color: #111112;
+    background-color: #36373a;
     color: white;
     margin: 10px;
     border-radius: 10px;
     line-break: break-all;
     transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .settings > div:hover {
@@ -76,7 +77,7 @@ body {
 }
 
 .settings > div.selected {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 225, 241);
     color: black;
 }
 
@@ -97,6 +98,7 @@ body {
     transition: 0.5s;
 }
 
-.creation-div .create > button:hover {
-    background-color: rgba(110, 110, 110, 0.25);
+.creation-div .create > button:active {
+    transition: none;
+    transform: translateY(10px);
 }
