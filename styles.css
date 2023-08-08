@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #313335, #323638);
+    overflow: hidden;
+    user-select: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 625px;
+    height: 800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.result-container {
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.result {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 25pt;
+}
+
+.length, .quantity {
+    margin-top: 15px;
+    font-size: 25pt;
+    padding-left: 2px;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.settings > div {
+    cursor: pointer;
+    background-color: #111112;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    line-break: break-all;
+    transition: 0.2s;
+}
+
+.settings > div:hover {
+    filter: brightness(70%);
+}
+
+.settings > div.selected {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.settings > div > h1 {
+    margin: 10px;
+}
+
+.creation-div .create > button {
+    font-size: 15pt;
+    background: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 70px;
+    border: 3px solid white;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.creation-div .create > button:hover {
+    background-color: rgba(110, 110, 110, 0.25);
+}
